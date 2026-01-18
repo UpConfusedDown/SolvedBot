@@ -2,7 +2,8 @@
   "private": true,
   "name": "solvedbot",
   "version": "1.0.1",
-"license": "MIT",  "type": "module",
+  "license": "MIT",
+  "type": "module",
   "scripts": {
     "deploy": "devvit upload",
     "dev": "devvit playtest",
