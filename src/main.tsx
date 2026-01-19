@@ -52,10 +52,12 @@ const selectAnswerForm = Devvit.createForm(
           const comment = await reddit.getCommentById(commentId);
 
           // Create a pinned mod comment highlighting the solution
-          await reddit.submitComment({
+          const newComment = await reddit.submitComment({
             id: postId,
             text: `✅ **Solution by u/${comment.authorName}:**\n\n> ${comment.body}\n\n---\n\n*This post has been marked as solved. Thank you!*`,
-          }).then(newComment => newComment.distinguish(true));
+          });
+
+          await newComment.distinguish(true);
 
         } catch (err) {
           console.error('Failed to pin comment:', err);

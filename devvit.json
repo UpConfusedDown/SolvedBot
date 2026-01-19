@@ -1,49 +1,17 @@
 {
   "$schema": "https://developers.reddit.com/schema/config-file.v1.json",
-  "name": "solvedbot",
+  "name": "solvedbot2",
   "blocks": {
     "entry": "src/main.tsx"
   },
   "permissions": {
     "reddit": {
       "enable": true,
-      "scope": "moderator"
+      "scope": "user"
     },
     "redis": true
   },
-  "triggers": {
-    "onPostSubmit": "/internal/triggers/post-submit",
-    "onAppInstall": "/internal/triggers/app-install",
-    "onAppUpgrade": "/internal/triggers/app-upgrade"
-  },
-  "menu": {
-    "items": [
-      {
-        "label": "✓ Mark as Solved",
-        "forUserType": "user",
-        "location": "post",
-        "endpoint": "/internal/menu/mark-solved"
-      },
-      {
-        "label": "📊 View SolvedBot Stats",
-        "forUserType": "moderator",
-        "location": "subreddit",
-        "endpoint": "/internal/menu/view-stats"
-      }
-    ]
-  },
-  "scheduler": {
-    "tasks": {
-      "update-stats-wiki": {
-        "endpoint": "/internal/cron/update-wiki",
-        "cron": "0 0 * * *"
-      }
-    }
-  },
-  "marketingAssets": {
-    "icon": "assets/icon.png"
-  },
   "dev": {
-    "subreddit": "solvedbot_dev"
+    "subreddit": "solvedbot2_dev"
   }
 }
