@@ -1,9 +1,6 @@
 {
   "$schema": "https://developers.reddit.com/schema/config-file.v1.json",
   "name": "solvedbot2",
-  "blocks": {
-    "entry": "src/main.tsx"
-  },
   "permissions": {
     "reddit": {
       "enable": true,
@@ -13,5 +10,6 @@
   },
   "dev": {
     "subreddit": "solvedbot2_dev"
-  }
+  },
+  "post": {}
 }
