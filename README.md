@@ -9,6 +9,7 @@ SolvedBot helps moderators and community members easily track which questions ha
 - **Automatic "Solved" Flair**: Mark posts as solved with a simple command
 - **User-Friendly Commands**: Let OPs mark their own questions as solved
 - **Moderator Tools**: Full control over solution tracking
+- - **Auto-Remove Solved Posts**: Automatically remove solved posts immediately or after a delay
 - **Clean Interface**: Simple post menu actions and commands
 - **Free & Open Source**: No hidden costs, completely transparent
 
@@ -50,12 +51,17 @@ Once installed by moderators, you can mark your post as solved:
 - **Community Engagement**: Users feel valued when their solutions are recognized
 - **Search Optimization**: Easier for users to find unanswered questions
 - **Analytics Ready**: Track solve rates and community health
+- - **Flexible Moderation**: Auto-remove solved posts to keep your feed clean
 
 ## 🛠️ Configuration Options
 
 - Custom flair text (default: "Solved")
 - Moderator-only vs. OP-enabled marking
 - Auto-lock solved posts (optional)
+- - **Auto-Remove Solved Posts**:
+  - Off (keep posts visible)
+  - Remove immediately when marked solved
+  - Remove 48 hours after being marked solved
 - Custom success messages
 - And more...
 
